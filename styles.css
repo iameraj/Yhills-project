@@ -82,3 +82,18 @@ button:hover {
     background-color: var(--black);
     color: var(--yellow);
 }
+
+.font-bree {
+    font-family: 'Bree Serif', serif;
+}
+
+.font-kalam {
+    font-family: 'Kalam', cursive;
+}
+.font-nunito {
+    font-family: 'Nunito', sans-serif;
+}
+
+.bg-pad {
+    padding: 20%;
+}
