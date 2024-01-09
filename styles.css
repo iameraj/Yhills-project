@@ -6,6 +6,10 @@
     --black: #191919;
 }
 
+main{
+  min-height: 100vh;
+}
+
 @keyframes wobble-rotate {
     0%,
     100% {
