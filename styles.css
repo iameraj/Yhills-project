@@ -68,3 +68,13 @@ button:hover {
 .bg-purple {
     background-color: var(--purple);
 }
+
+.bg-orange {
+    background-color: var(--orange) !important;
+    color: var(--black);
+}
+
+.bg-black {
+    background-color: var(--black);
+    color: var(--yellow);
+}
