@@ -5,72 +5,21 @@
     --purple: #6a2c70;
     --black: #191919;
 }
-
-main{
-  min-height: 100vh;
+body {
+    background-color: var(--maroon);
+}
+main {
+    min-height: 50vh;
+    background-color: var(--maroon);
 }
 
-@keyframes wobble-rotate {
-    0%,
-    100% {
-        transform: rotate(0deg);
-    }
-
-    10%,
-    20%,
-    30% {
-        transform: rotate(-5deg);
-    }
-
-    15%,
-    25%,
-    35% {
-        transform: rotate(5deg);
-    }
-
-    40%,
-    50%,
-    60% {
-        transform: rotate(-3deg);
-    }
-
-    45%,
-    55%,
-    65% {
-        transform: rotate(3deg);
-    }
-
-    70%,
-    80%,
-    90% {
-        transform: rotate(-2deg);
-    }
-
-    75%,
-    85%,
-    95% {
-        transform: rotate(2deg);
-    }
-
-    40%,
-    50%,
-    60% {
-        transform: rotate(-3deg);
-    }
-
-    45%,
-    55%,
-    65% {
-        transform: rotate(3deg);
-    }
+.bg-yellow {
+    background-color: var(--yellow);
 }
 
-button:hover {
-    animation: wobble-rotate 1s ease infinite;
-}
-
-.bg-purple {
-    background-color: var(--purple);
+.bg-maroon {
+    background-color: var(--maroon);
+    color: var(--yellow);
 }
 
 .bg-orange {
@@ -84,16 +33,58 @@ button:hover {
 }
 
 .font-bree {
-    font-family: 'Bree Serif', serif;
+    font-family: "Bree Serif", serif;
 }
 
 .font-kalam {
-    font-family: 'Kalam', cursive;
+    font-family: "Kalam", cursive;
 }
 .font-nunito {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+::-webkit-scrollbar-thumb {
+    display: none;
+}
+::-webkit-scrollbar-corner {
+    display: none;
 }
 
 .bg-pad {
-    padding: 20%;
+    padding: 10%;
+}
+
+.flex {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+form {
+    background-color: var(--yellow);
+    padding: 10%;
+    max-width: 700px;
+
+
+}
+.form {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 20px;
+}
+.footer {
+    background-color: var(--purple);
+    color: var(var(--black));
+ 
+    margin-top: 50px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+#staticbackdrop {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
