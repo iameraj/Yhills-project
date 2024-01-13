@@ -1,8 +1,8 @@
 // Function to add an item to the cart
 function addToCart(num, itemName, itemPrice) {
-    const cartItemsList = document.getElementById("cartItemsList");
-    const listItem = document.createElement("li");
-    listItem.innerHTML = `
+  const cartItemsList = document.getElementById("cartItemsList");
+  const listItem = document.createElement("li");
+  listItem.innerHTML = `
                 <div class="card mb-3" style="max-width: 540px position: relative;">
                     <div class="row g-0">
                         <div class="col-md-4">
@@ -26,12 +26,12 @@ function addToCart(num, itemName, itemPrice) {
                         
                     </div>
                 </div>`;
-    cartItemsList.appendChild(listItem);
-    $("#liveToast").toast("show");
+  cartItemsList.appendChild(listItem);
+  $("#liveToast").toast("show");
 }
 
 // Function to remove an item from the cart
 function removeFromCart(button) {
-    const listItem = button.parentNode.parentNode.parentNode.parentNode;
-    listItem.remove();
+  const listItem = button.parentNode.parentNode.parentNode.parentNode;
+  listItem.remove();
 }

@@ -1,110 +1,131 @@
 :root {
-    --yellow: #f9ed69;
-    --orange: #f08a5d;
-    --maroon: #b83b5e;
-    --purple: #6a2c70;
-    --black: #191919;
+  --yellow: #f9ed69;
+  --orange: #f08a5d;
+  --maroon: #b83b5e;
+  --purple: #6a2c70;
+  --black: #191919;
 }
+
 body {
-    background-color: var(--maroon);
+  background-color: var(--maroon);
 }
+
 main {
-    min-height: 50vh;
-    background-color: var(--maroon);
+  min-height: 50vh;
+  background-color: var(--maroon);
 }
 
 .bg-yellow {
-    background-color: var(--yellow);
+  background-color: var(--yellow);
+  border: 2px solid var(--purple);
+  border-radius: 5px;
 }
 
 .bg-maroon {
-    background-color: var(--maroon);
-    color: var(--yellow);
+  background-color: var(--maroon);
+  color: var(--yellow);
 }
 
 .bg-orange {
-    background-color: var(--orange) !important;
-    color: var(--black);
+  background-color: var(--orange) !important;
+  color: var(--black);
 }
 
 .bg-black {
-    background-color: var(--black);
-    color: var(--yellow);
+  background-color: var(--black);
+  color: var(--yellow);
 }
 
 .font-bree {
-    font-family: "Bree Serif", serif;
+  font-family: "Bree Serif", serif;
 }
 
 .font-kalam {
-    font-family: "Kalam", cursive;
+  font-family: "Kalam", cursive;
 }
+
 .font-nunito {
-    font-family: "Nunito", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 ::-webkit-scrollbar {
-    width: 2px;
+  width: 2px;
 }
+
 ::-webkit-scrollbar-thumb {
-    display: none;
+  display: none;
 }
+
 ::-webkit-scrollbar-corner {
-    display: none;
+  display: none;
 }
 
 .bg-pad {
-    padding: 10%;
+  padding: 10%;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
+
 form {
-    background-color: white;
-    padding: 10%;
-    margin: 10%;
-    max-width: 700px;
-    border-radius: 10px;
+  background-color: white;
+  padding: 10%;
+  margin: 10%;
+  max-width: 700px;
+  border-radius: 10px;
 
 }
+
 .final-container {
-    background-color: var(--orange);
-    box-shadow:
-        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    padding: 20px;
-    margin: auto;
-    border: 2px solid var(--purple);
-    border-radius: 15px;
+  background-color: var(--orange);
+  box-shadow:
+    rgba(50, 50, 150, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 6, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 100, 0.35) 0px -2px 6px 0px inset;
+  padding: 20px;
+  margin: auto;
+  border: 2px solid var(--purple);
+  border-radius: 15px;
 }
+
+.card {
+  border: 2px solid var(--purple) !important;
+  border-radius: 7px !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset !important;
+
+}
+
 .about-container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .footer {
-    background-color: var(--purple);
-    color: var(var(--black));
-    padding: 10%;
-    
-    margin-top: 50px;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
+  background-color: var(--purple);
+  color: var(var(--black));
+  padding: 10%;
+
+  margin-top: 50px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
 }
-i{
-    font-size: 50px;
-    color: var(--yellow);
- }
+
+i {
+  font-size: 50px;
+  color: var(--yellow);
+}
 
 #staticbackdrop {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
