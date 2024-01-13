@@ -66,6 +66,24 @@
                 </div>
             </div>
         </div>
+        <!-- modal # about developer -->
+        <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-maroon">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Meraj Sheikh</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-yellow">
+                  <p>Hey there!</p>
+                <p>This website was built by me for final project of Yhills web development course</p>
+                <p> The code can be found at <a href="https://github.com/iameraj/Yhills-project"> the github repository</a></p>
+                <p> You can contact me at my  <a href="https://www.linkedin.com/in/meraj-sheikh-043168277/">linkedIn profile</a></p>
+                <p> You can also email me at iameraj@outlook.com </p>
+                </div>
+              </div>
+            </div>
+          </div>
         <!-- Toast messages -->
         <div class="toast-container position-fixed top-0 start-0 p-3">
             <div
@@ -110,7 +128,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav container-fluid">
                             <li class="nav-item">
                                 <strong
                                     ><a
@@ -120,6 +138,16 @@
                                         >My Cart</a
                                     ></strong
                                 >
+                            </li>
+                            <li class="navbar-nav">
+                                
+                                <a
+                                    class="nav-link"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#aboutModal"
+                                    >About Developer</a
+                                >
+                            
                             </li>
                         </ul>
                     </div>
