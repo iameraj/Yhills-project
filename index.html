@@ -33,7 +33,9 @@
             aria-labelledby="staticBackdropLabel"
             aria-hidden="true"
         >
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+            >
                 <div class="modal-content">
                     <div class="modal-header bg-orange">
                         <h1 class="modal-title fs-5" id="staticBackdropLabel">
@@ -91,7 +93,7 @@
         <!-- main page starts here -->
         <main>
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg bg-orange">
+            <nav class="navbar navbar-expand-lg sticky-top bg-orange ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"
                         ><i class="fa-solid fa-circle"></i> - StrideSphere</a
@@ -175,8 +177,12 @@
             </div>
 
             <!-- Cards -->
+            <div id="cards" class="container">
+                <h2>Products</h2>
+                <hr>
+            </div>
             <center>
-                <div id="cards" class="container-sm">
+                <div class="container-sm">
                     <div class="row">
                         <div class="col">
                             <div class="card m-3" style="width: 18rem">
@@ -188,10 +194,10 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Blue Shoe</h5>
                                     <p class="card-text">
-                                        to build on the card title and make up
-                                        the bulk of the card's content.
+                                        Engineered with advanced cushioning technology to provide comfort, making every step feel like you're walking on clouds.
+
                                     </p>
-                                    <a href="#" class="btn btn-primary">Buy!</a>
+                                    <a href="#" class="btn btn-primary">$99.99</a>
                                     <button
                                         class="btn btn-secondary"
                                         onclick="addToCart( 1, 'Blue Shoe', 99.99)"
@@ -211,10 +217,10 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Red Shoe</h5>
                                     <p class="card-text">
-                                        to build on the card title and make up
-                                        the bulk of the card's content.
+                                        This ergonomic design ensures proper support for your feet, reducing fatigue even during long hours & Comfort Beyond Compare.
+
                                     </p>
-                                    <a href="#" class="btn btn-primary">Buy!</a>
+                                    <a href="#" class="btn btn-primary">$499.99</a>
                                     <button
                                         class="btn btn-secondary"
                                         onclick="addToCart( 2, 'Red Shoe', 499.99)"
@@ -234,16 +240,16 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Yellow Shoe</h5>
                                     <p class="card-text">
-                                        to build on the card title and make up
-                                        the bulk of the card's content.
+                                        Meticulously crafted using premium materials to guarantee durability and longevity. Our shoes are built to withstand the test of time.
+                                        
                                     </p>
-                                    <a href="#" class="btn btn-primary">Buy!</a>
+                                    <a href="#" class="btn btn-primary">$99.99</a>
                                     <button
-                                    class="btn btn-secondary"
-                                    onclick="addToCart(3, 'Yellow Shoe', 99.99)"
-                                >
-                                Add to Cart
-                            </button>
+                                        class="btn btn-secondary"
+                                        onclick="addToCart(3, 'Yellow Shoe', 99.99)"
+                                    >
+                                        Add to Cart
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -259,15 +265,16 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Rainbow Shoe</h5>
                                     <p class="card-text">
-                                        to build on the card title and make up
-                                        the bulk of the card's content.
+                                        This Shoe has revolutionary materials that are not only stylish but also environmentally conscious &  is committed to sustainibility.
+
                                     </p>
-                                    <a href="#" class="btn btn-primary">Buy!</a>
+                                    <a href="#" class="btn btn-primary">$99.99</a>
                                     <button
-                                    class="btn btn-secondary"
-                                    onclick="addToCart( 4, 'Rainbow Shoe', 99.99)"
-                                >                                        Add to Cart
-                            </button>
+                                        class="btn btn-secondary"
+                                        onclick="addToCart( 4, 'Rainbow Shoe', 99.99)"
+                                    >
+                                        Add to Cart
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -281,15 +288,16 @@
                                 <div class="card-body">
                                     <h5 class="card-title">White Shoe</h5>
                                     <p class="card-text">
-                                        to build on the card title and make up
-                                        the bulk of the card's content.
+                                        Engineered with advanced cushioning technology to providecomfort, making every step feel like you're walking on clouds.
+
                                     </p>
-                                    <a href="#" class="btn btn-primary">Buy!</a>
+                                    <a href="#" class="btn btn-primary">$999.99</a>
                                     <button
-                                    class="btn btn-secondary"
-                                    onclick="addToCart( 5, 'White Shoe', 999.99)"
-                                >                                        Add to Cart
-                            </button>
+                                        class="btn btn-secondary"
+                                        onclick="addToCart( 5, 'White Shoe', 999.99)"
+                                    >
+                                        Add to Cart
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -303,69 +311,93 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Orange Shoe</h5>
                                     <p class="card-text">
-                                        to build on the card title and make up
-                                        the bulk of the card's content.
+                                        Meticulously crafted using premium materials to guarantee durability and longevity. Our shoes are built to withstand the test of time.
+
                                     </p>
-                                    <a href="#" class="btn btn-primary">Buy!</a>
+                                    <a href="#" class="btn btn-primary">$69.99</a>
                                     <button
-                                    class="btn btn-secondary"
-                                    onclick="addToCart(6, 'Orange Shoe', 69.99)"
-                                >                                        Add to Cart
-                            </button>
+                                        class="btn btn-secondary"
+                                        onclick="addToCart(6, 'Orange Shoe', 69.99)"
+                                    >
+                                        Add to Cart
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </center>
-            <br>
+            <br />
+            <!-- about & feedback -->
             <center>
-                <div class="container-sm form">
-<form class="row g-3">
-    <h1>FeedBack Form</h1>
-    <div class="col-md-6">
-      <label for="inputEmail4" class="form-label">Email</label>
-      <input type="email" class="form-control" id="inputEmail4">
-    </div>
-    <div class="col-md-6">
-      <label for="inputPassword4" class="form-label">Password</label>
-      <input type="password" class="form-control" id="inputPassword4">
-    </div>
-    <div class="col-12">
-      <label for="inputAddress" class="form-label">Address</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-    </div>
-    <div class="col-12">
-      <label for="inputAddress2" class="form-label">Address 2</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-    </div>
-    <div class="col-md-6">
-      <label for="inputCity" class="form-label">City</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="col-md-4">
-      <label for="inputState" class="form-label">State</label>
-      <select id="inputState" class="form-select">
-        <option selected>Choose...</option>
-        <option>...</option>
-      </select>
-    </div>
-    <div class="col-md-2">
-      <label for="inputZip" class="form-label">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
-    <div class="col-12">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
-          Check me out
-        </label>
-      </div>
-    </div>
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary">Sign in</button>
-    </div>
-  </form>
+                <div class="container">
+                    <div class="final-container">
+                        <div class="row">
+
+                            <div class="col-6">
+                                <div class="row"> <div class="container">
+                                    <img src="public/location.png" alt="" width="60px">
+                                    <p>Bangalore India
+                                      <br>Gurugram India
+                                    </p>
+                                  </div></div>
+                                <div class="row">          <div class="container">
+                                    <img src="public/phone.png" alt="" width="60px">
+                                    <p>+91 9906790377
+                                      <br>+91 9858353990
+                                    </p>
+                                  </div></div>
+                                <div class="row">          <div class="container">
+                                    <img src="public/email.png" alt="" width="60px">
+                                    <p>example@gmail.com
+                                      <br>contact@gmail.com
+                                    </p>
+                                  </div></div>
+                            </div>
+                            <div class="col-6">
+                                <form class="row g-3 m-3">
+                                    <h1>FeedBack Form</h1>
+                                    <div class="col-md-8">
+                                        <label for="inputEmail4" class="form-label float-start"
+                                            >Email</label
+                                        >
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            id="inputEmail4"
+                                            placeholder="yourEmail@example.com"
+
+                                        />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="inputPassword4" class="form-label float-start"
+                                            >Password</label
+                                        >
+                                        <input
+                                            type="password"
+                                            class="form-control"
+                                            id="inputPassword4"
+                                            placeholder="password"
+
+                                        />
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label float-start">Feedback</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Feedback"></textarea>
+                                          </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-grid gap-2 d-md-block">
+                                            <button class="btn btn-danger" type="button">Submit Feedback</button>
+                                          </div>
+                                    </div>
+                                    </div>
+               
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </center>
             <div class="footer">
