@@ -83,15 +83,27 @@ form {
     border: 2px solid var(--purple);
     border-radius: 15px;
 }
+.about-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .footer {
     background-color: var(--purple);
     color: var(var(--black));
-
+    padding: 10%;
+    
     margin-top: 50px;
     text-align: center;
     bottom: 0;
     width: 100%;
 }
+i{
+    font-size: 50px;
+    color: var(--yellow);
+ }
 
 #staticbackdrop {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
