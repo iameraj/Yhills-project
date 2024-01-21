@@ -7,8 +7,8 @@
 }
 
 
-main {
-  min-height: 50vh;
+body {
+  min-height: 100vh;
 }
 
 .bg-yellow {
@@ -74,7 +74,6 @@ form {
   margin: 10%;
   max-width: 700px;
   border-radius: 10px;
-
 }
 
 .final-container {
@@ -94,11 +93,9 @@ form {
 }
 
 .card {
-
   border-radius: 7px !important;
-  align-self:center;
+  align-self: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
 }
 
 .about-container {
