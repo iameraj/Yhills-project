@@ -52,7 +52,7 @@
         </div>
         <div class="modal-body bg-yellow">
           <p>Hey there!</p>
-          <p>This website was built by me for the final project of Yhills web development course</p>
+          <p>This website was built by me for the project of Embrizon web development</p>
           <p> The code can be found at <a target="_blank" rel="noopener noreferrer"
               href="https://github.com/iameraj/Yhills-project"> the GitHub repository</a>
           </p>
@@ -81,7 +81,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top bg-orange ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">StrideSphere</a>
+        <a class="navbar-brand p-2" href="#">StrideSphere</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -107,7 +107,7 @@
           <h1 class="display-4 fw-bold lh-1 text-body-emphasis">
             StrideSphere
           </h1>
-          <h2>YHills Demo footwear brand.</h2>
+          <h2>Embrizon Demo footwear brand.</h2>
           <p class="lead">
             Welcome to StrideSphere, where fashion meets comfort
             in every step! We're not just a shoe brand; we're a
@@ -134,118 +134,367 @@
       </div>
     </div>
 
-    <!-- Cards -->
+    <!-- Cards (Masonry) -->
     <div id="cards" class="container">
-      <h2>Products</h2>
+      <h2 class="display-2">Products</h2>
       <hr>
     </div>
     <center>
-      <div class="container-sm">
-        <div class="row">
-          <div class="col">
-            <div class="card m-3" style="width: 18rem">
-              <img src="./public/shoe1.jpg" class="card-img-top" alt="Blue shoe" />
-              <div class="card-body">
-                <h5 class="card-title">Blue Shoe</h5>
-                <p class="card-text">
-                  Engineered with advanced cushioning technology to provide comfort, making every step feel like you're
-                  walking on clouds.
-
-                </p>
-                <a href="#" class="btn btn-primary">$99.99</a>
-                <button class="btn btn-secondary" onclick="addToCart( 1, 'Blue Shoe', 99.99)">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card m-3" style="width: 18rem">
-              <img src="public/shoe2.jpg" class="card-img-top" alt="Blue shoe" />
-              <div class="card-body">
-                <h5 class="card-title">Red Shoe</h5>
-                <p class="card-text">
-                  This ergonomic design ensures proper support for your feet, reducing fatigue even during long hours &
-                  Comfort Beyond Compare.
-
-                </p>
-                <a href="#" class="btn btn-primary">$499.99</a>
-                <button class="btn btn-secondary" onclick="addToCart( 2, 'Red Shoe', 499.99)">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card m-3" style="width: 18rem">
-              <img src="public/shoe3.jpg" class="card-img-top" alt="Yellow shoe" />
-              <div class="card-body">
-                <h5 class="card-title">Yellow Shoe</h5>
-                <p class="card-text">
-                  Meticulously crafted using premium materials to guarantee durability and longevity.This is
-                  built to withstand the test of time.
-
-                </p>
-                <a href="#" class="btn btn-primary">$99.99</a>
-                <button class="btn btn-secondary" onclick="addToCart(3, 'Yellow Shoe', 99.99)">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
+    <div class="grid card-container" data-masonry='{ "itemSelector": ".grid-item"}'>
+      <!-- Item start -->
+      <div class="grid-item">
+        <div class="card m-3" style="width: 18rem">
+          <img src="./public/shoe1.jpg" class="card-img-top" alt="Blue shoe" />
+          <div class="card-body">
+            <h5 class="card-title">Blue Shoe</h5>
+            <p class="card-text">
+              Engineered with advanced cushioning technology to provide comfort, making every step feel like you're
+              walking on clouds.
+            </p>
+            <a href="#" class="btn btn-primary">$99.99</a>
+            <button class="btn btn-secondary" onclick="addToCart( 1, 'Blue Shoe', 99.99)">
+              Add to Cart
+            </button>
           </div>
         </div>
+      </div>
+      <!-- Item end -->
+
+       <!-- Item start -->
+      <div class="grid-item">
+        <div class="card m-3" style="width: 18rem">
+          <img src="public/shoe2.jpg" class="card-img-top" alt="Blue shoe" />
+          <div class="card-body">
+            <h5 class="card-title">Red Shoe</h5>
+
+            <a href="#" class="btn btn-primary">$499.99</a>
+            <button class="btn btn-secondary" onclick="addToCart( 2, 'Red Shoe', 499.99)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Item end -->  
+             <!-- Item start -->
+             <div class="grid-item">
+              <div class="card m-3" style="width: 18rem">
+                <img src="public/shoe3.jpg" class="card-img-top" alt="Yellow shoe" />
+                <div class="card-body">
+                  <h5 class="card-title">Yellow Shoe</h5>
+                  <p class="card-text">
+                    Meticulously crafted using premium materials to guarantee durability and longevity.
+  
+                  </p>
+                  <a href="#" class="btn btn-primary">$99.99</a>
+                  <button class="btn btn-secondary" onclick="addToCart(3, 'Yellow Shoe', 99.99)">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+             </div>
+             <!-- Item end -->   
+                    <!-- Item start -->
+      <div class="grid-item">
+        <div class="card m-3" style="width: 18rem">
+          <img src="public/shoe4.jpg" class="card-img-top" alt="Rainbow shoe" />
+          <div class="card-body">
+            <h5 class="card-title">Rainbow Shoe</h5>
+
+            <a href="#" class="btn btn-primary">$99.99</a>
+            <button class="btn btn-secondary" onclick="addToCart( 4, 'Rainbow Shoe', 99.99)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Item end -->   
+             <!-- Item start -->
+             <div class="grid-item">
+              <div class="card m-3" style="width: 18rem">
+                <img src="public/shoe5.jpg" class="card-img-top" alt="White Shoe" />
+                <div class="card-body">
+                  <h5 class="card-title">White Shoe</h5>
+                  <p class="card-text">
+                    Engineered with advanced cushioning technology to providecomfort, making every step feel like you're
+                    walking on clouds.
+  
+                  </p>
+                  <a href="#" class="btn btn-primary">$999.99</a>
+                  <button class="btn btn-secondary" onclick="addToCart( 5, 'White Shoe', 999.99)">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+             </div>
+             <!-- Item end -->   
+                    <!-- Item start -->
+      <div class="grid-item">
+        <div class="card m-3" style="width: 18rem">
+          <img src="public/shoe6.jpg" class="card-img-top" alt="Orange shoe" />
+          <div class="card-body">
+            <h5 class="card-title">Orange Shoe</h5>
+            <p class="card-text">
+              Meticulously crafted using premium materials to guarantee durability and longevity.
+
+            </p>
+            <a href="#" class="btn btn-primary">$69.99</a>
+            <button class="btn btn-secondary" onclick="addToCart(6, 'Orange Shoe', 69.99)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Item end -->    
+       <!-- Item start -->
+       <div class="grid-item">
+        <div class="card m-3" style="width: 18rem">
+          <img src="./public/shoe1.jpg" class="card-img-top" alt="Blue shoe" />
+          <div class="card-body">
+            <h5 class="card-title">Blue Shoe</h5>
+            <p class="card-text">
+              Engineered with advanced cushioning technology to provide comfort, making every step feel like you're
+              walking on clouds.
+            </p>
+            <a href="#" class="btn btn-primary">$99.99</a>
+            <button class="btn btn-secondary" onclick="addToCart( 1, 'Blue Shoe', 99.99)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Item end -->
+
+       <!-- Item start -->
+      <div class="grid-item">
+        <div class="card m-3" style="width: 18rem">
+          <img src="public/shoe2.jpg" class="card-img-top" alt="Blue shoe" />
+          <div class="card-body">
+            <h5 class="card-title">Red Shoe</h5>
+            <p class="card-text">
+              This ergonomic design ensures proper support for your feet, reducing fatigue even during long hours &
+              Comfort Beyond Compare.
+
+            </p>
+            <a href="#" class="btn btn-primary">$499.99</a>
+            <button class="btn btn-secondary" onclick="addToCart( 2, 'Red Shoe', 499.99)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Item end -->  
+             <!-- Item start -->
+             <div class="grid-item">
+              <div class="card m-3" style="width: 18rem">
+                <img src="public/shoe3.jpg" class="card-img-top" alt="Yellow shoe" />
+                <div class="card-body">
+                  <h5 class="card-title">Yellow Shoe</h5>
+                  <p class="card-text">
+                    Meticulously crafted using premium materials to guarantee durability and longevity.
+  
+                  </p>
+                  <a href="#" class="btn btn-primary">$99.99</a>
+                  <button class="btn btn-secondary" onclick="addToCart(3, 'Yellow Shoe', 99.99)">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+             </div>
+             <!-- Item end -->   
+                    <!-- Item start -->
+      <div class="grid-item">
+        <div class="card m-3" style="width: 18rem">
+          <img src="public/shoe4.jpg" class="card-img-top" alt="Rainbow shoe" />
+          <div class="card-body">
+            <h5 class="card-title">Rainbow Shoe</h5>
+            <p class="card-text">
+              This Shoe has revolutionary materials that are not only stylish but also environmentally conscious &
+              is committed to sustainibility.
+
+            </p>
+            <a href="#" class="btn btn-primary">$99.99</a>
+            <button class="btn btn-secondary" onclick="addToCart( 4, 'Rainbow Shoe', 99.99)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Item end -->   
+             <!-- Item start -->
+             <div class="grid-item">
+              <div class="card m-3" style="width: 18rem">
+                <img src="public/shoe5.jpg" class="card-img-top" alt="White Shoe" />
+                <div class="card-body">
+                  <h5 class="card-title">White Shoe</h5>
+                  <p class="card-text">
+                    Engineered with advanced cushioning technology 
+  
+                  </p>
+                  <a href="#" class="btn btn-primary">$999.99</a>
+                  <button class="btn btn-secondary" onclick="addToCart( 5, 'White Shoe', 999.99)">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+             </div>
+             <!-- Item end -->   
+                    <!-- Item start -->
+      <div class="grid-item">
+        <div class="card m-3" style="width: 18rem">
+          <img src="public/shoe6.jpg" class="card-img-top" alt="Orange shoe" />
+          <div class="card-body">
+            <h5 class="card-title">Orange Shoe</h5>
+            <p class="card-text">
+              Meticulously crafted using premium materials to guarantee durability and longevity.
+
+            </p>
+            <a href="#" class="btn btn-primary">$69.99</a>
+            <button class="btn btn-secondary" onclick="addToCart(6, 'Orange Shoe', 69.99)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Item end -->  
+             <!-- Item start -->
+             <div class="grid-item">
+              <div class="card m-3" style="width: 18rem">
+                <img src="public/shoe2.jpg" class="card-img-top" alt="Blue shoe" />
+                <div class="card-body">
+                  <h5 class="card-title">Red Shoe</h5>
+      
+                  <a href="#" class="btn btn-primary">$499.99</a>
+                  <button class="btn btn-secondary" onclick="addToCart( 2, 'Red Shoe', 499.99)">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Item end -->  
+                   <!-- Item start -->
+                   <div class="grid-item">
+                    <div class="card m-3" style="width: 18rem">
+                      <img src="public/shoe3.jpg" class="card-img-top" alt="Yellow shoe" />
+                      <div class="card-body">
+                        <h5 class="card-title">Yellow Shoe</h5>
+                        <p class="card-text">
+                          Meticulously crafted using premium materials to guarantee durability and longevity.
+        
+                        </p>
+                        <a href="#" class="btn btn-primary">$99.99</a>
+                        <button class="btn btn-secondary" onclick="addToCart(3, 'Yellow Shoe', 99.99)">
+                          Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                   </div>
+                   <!-- Item end -->   
+                          <!-- Item start -->
+            <div class="grid-item">
+              <div class="card m-3" style="width: 18rem">
+                <img src="public/shoe4.jpg" class="card-img-top" alt="Rainbow shoe" />
+                <div class="card-body">
+                  <h5 class="card-title">Rainbow Shoe</h5>
+      
+                  <a href="#" class="btn btn-primary">$99.99</a>
+                  <button class="btn btn-secondary" onclick="addToCart( 4, 'Rainbow Shoe', 99.99)">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Item end -->   
+                   <!-- Item start -->
+                   <div class="grid-item">
+                    <div class="card m-3" style="width: 18rem">
+                      <img src="public/shoe5.jpg" class="card-img-top" alt="White Shoe" />
+                      <div class="card-body">
+                        <h5 class="card-title">White Shoe</h5>
+                        <p class="card-text">
+                          Engineered with advanced cushioning technology to providecomfort, making every step feel like you're
+                          walking on clouds.
+        
+                        </p>
+                        <a href="#" class="btn btn-primary">$999.99</a>
+                        <button class="btn btn-secondary" onclick="addToCart( 5, 'White Shoe', 999.99)">
+                          Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                   </div>
+                   <!-- Item end -->   
+                          <!-- Item start -->
+            <div class="grid-item">
+              <div class="card m-3" style="width: 18rem">
+                <img src="public/shoe6.jpg" class="card-img-top" alt="Orange shoe" />
+                <div class="card-body">
+                  <h5 class="card-title">Orange Shoe</h5>
+                  <p class="card-text">
+                    Meticulously crafted using premium materials to guarantee durability and longevity.
+      
+                  </p>
+                  <a href="#" class="btn btn-primary">$69.99</a>
+                  <button class="btn btn-secondary" onclick="addToCart(6, 'Orange Shoe', 69.99)">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Item end -->    
+             <!-- Item start -->
+             <div class="grid-item">
+              <div class="card m-3" style="width: 18rem">
+                <img src="./public/shoe1.jpg" class="card-img-top" alt="Blue shoe" />
+                <div class="card-body">
+                  <h5 class="card-title">Blue Shoe</h5>
+                  <p class="card-text">
+                    Engineered with advanced cushioning technology to provide comfort, making every step feel like you're
+                    walking on clouds.
+                  </p>
+                  <a href="#" class="btn btn-primary">$99.99</a>
+                  <button class="btn btn-secondary" onclick="addToCart( 1, 'Blue Shoe', 99.99)">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Item end -->
+             <!-- Item start -->
+            <div class="grid-item">
+              <div class="card m-3" style="width: 18rem">
+                <img src="public/shoe2.jpg" class="card-img-top" alt="Blue shoe" />
+                <div class="card-body">
+                  <h5 class="card-title">Red Shoe</h5>
+                  <p class="card-text">
+                    This ergonomic design ensures proper support for your feet, reducing fatigue even during long hours &
+                    Comfort Beyond Compare.
+      
+                  </p>
+                  <a href="#" class="btn btn-primary">$499.99</a>
+                  <button class="btn btn-secondary" onclick="addToCart( 2, 'Red Shoe', 499.99)">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Item end -->  
+                        
+    </div>
+  </center>
+    <!-- Cards (masonry) end -->
+
+    <!-- Cards -->
+    <center>
+      <div class="container-sm">
         <div class="row">
-          <div class="col">
-            <div class="card m-3" style="width: 18rem">
-              <img src="public/shoe4.jpg" class="card-img-top" alt="Rainbow shoe" />
-              <div class="card-body">
-                <h5 class="card-title">Rainbow Shoe</h5>
-                <p class="card-text">
-                  This Shoe has revolutionary materials that are not only stylish but also environmentally conscious &
-                  is committed to sustainibility.
-
-                </p>
-                <a href="#" class="btn btn-primary">$99.99</a>
-                <button class="btn btn-secondary" onclick="addToCart( 4, 'Rainbow Shoe', 99.99)">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card m-3" style="width: 18rem">
-              <img src="public/shoe5.jpg" class="card-img-top" alt="White Shoe" />
-              <div class="card-body">
-                <h5 class="card-title">White Shoe</h5>
-                <p class="card-text">
-                  Engineered with advanced cushioning technology to providecomfort, making every step feel like you're
-                  walking on clouds.
-
-                </p>
-                <a href="#" class="btn btn-primary">$999.99</a>
-                <button class="btn btn-secondary" onclick="addToCart( 5, 'White Shoe', 999.99)">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card m-3" style="width: 18rem">
-              <img src="public/shoe6.jpg" class="card-img-top" alt="Orange shoe" />
-              <div class="card-body">
-                <h5 class="card-title">Orange Shoe</h5>
-                <p class="card-text">
-                  Meticulously crafted using premium materials to guarantee durability and longevity.This is
-                  built to withstand the test of time.
-
-                </p>
-                <a href="#" class="btn btn-primary">$69.99</a>
-                <button class="btn btn-secondary" onclick="addToCart(6, 'Orange Shoe', 69.99)">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
         </div>
       </div>
     </center>
@@ -324,7 +573,7 @@
       </div>
     </center>
     <div class="footer">
-      <p>&copy; StrideSphere-2024 By Meraj for Yhills final project</p>
+      <p>&copy; StrideSphere-2024 By Meraj for Embrizon project</p>
     </div>
   </main>
   <script src="./script.js"></script>
@@ -333,6 +582,7 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/6a01783446.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </body>
 
 </html>
