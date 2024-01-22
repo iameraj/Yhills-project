@@ -10,9 +10,9 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Kalam:wght@700&family=Nunito:wght@200&display=swap"
-    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700;900&display=swap" rel="stylesheet">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
         <link rel="stylesheet" href="styles.css">
 </head>
@@ -33,7 +33,7 @@
           <ul id="cartItemsList"></ul>
         </div>
         <div class="modal-footer bg-orange">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
             Close
           </button>
           <button type="button" class="btn btn-warning">
@@ -58,7 +58,7 @@
   <!-- main page starts here -->
   <main>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top bg-orange">
+    <nav class="navbar navbar-expand-lg bg-orange">
       <div class="container-fluid">
        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -94,14 +94,14 @@
     </nav>
     
 
-    <div class="container my-5 bg-yellow">
-      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-          <h1 class="display-4 fw-bold lh-1 text-body-emphasis">
+    <div class="container-fluid my-5 bg-yellow">
+      <div class="row">
+        <div class="col-lg-7 p-5 p-lg-5 pt-lg-3 hero-text">
+          <h1 class="display-4 mt-5 fw-bold lh-1 text-body-emphasis">
             StrideSphere
           </h1>
           <h2>Embrizon Demo footwear brand.</h2>
-          <p class="lead">
+          <p class="lead px-2">
             Welcome to StrideSphere, where fashion meets comfort
             in every step! We're not just a shoe brand; we're a
             lifestyle revolution. At StrideSphere, we believe
@@ -121,18 +121,19 @@
             </button>
           </div>
         </div>
-        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-          <img class="rounded-lg-3" src="public/hero.jpg" alt="" width="720px" />
+        <div class="col-lg-5 px-0">
+          <img  src="public/hero.jpg" alt="shoes in air" height="100%" width="100%"/>
         </div>
       </div>
     </div>
 
     <!-- Cards (Masonry) -->
-    <div id="cards" class="container">
-      <h2 class="display-2">Products</h2>
-      <hr>
-    </div>
-    <div class="container">
+    <center>
+      <div id="cards" class="container">
+        <h2 class="display-2">Products</h2>
+      </div>
+    </center>
+    <div class="container my-5">
     <div class="grid " data-masonry='{ "itemSelector": ".grid-item"} '>
       <!-- Item start -->
       <div class="grid-item">
@@ -144,8 +145,8 @@
               Engineered with advanced cushioning technology to provide comfort, making every step feel like you're
               walking on clouds.
             </p>
-            <a href="#" class="btn btn-primary">$99.99</a>
-            <button class="btn btn-secondary" onclick="addToCart( 1, 'Blue Shoe', 99.99)">
+            <a href="#" class="btn btn-outline-secondary">$99.99</a>
+            <button class="btn btn-warning" onclick="addToCart( 1, 'Blue Shoe', 99.99)">
               Add to Cart
             </button>
           </div>
@@ -160,8 +161,8 @@
           <div class="card-body">
             <h5 class="card-title">Red Shoe</h5>
 
-            <a href="#" class="btn btn-primary">$499.99</a>
-            <button class="btn btn-secondary" onclick="addToCart( 2, 'Red Shoe', 499.99)">
+            <a href="#" class="btn btn-outline-secondary">$499.99</a>
+            <button class="btn btn-warning" onclick="addToCart( 2, 'Red Shoe', 499.99)">
               Add to Cart
             </button>
           </div>
@@ -178,8 +179,8 @@
                     Meticulously crafted using premium materials to guarantee durability and longevity.
   
                   </p>
-                  <a href="#" class="btn btn-primary">$99.99</a>
-                  <button class="btn btn-secondary" onclick="addToCart(3, 'Yellow Shoe', 99.99)">
+                  <a href="#" class="btn btn-outline-secondary">$99.99</a>
+                  <button class="btn btn-warning" onclick="addToCart(3, 'Yellow Shoe', 99.99)">
                     Add to Cart
                   </button>
                 </div>
@@ -193,8 +194,8 @@
           <div class="card-body">
             <h5 class="card-title">Rainbow Shoe</h5>
 
-            <a href="#" class="btn btn-primary">$99.99</a>
-            <button class="btn btn-secondary" onclick="addToCart( 4, 'Rainbow Shoe', 99.99)">
+            <a href="#" class="btn btn-outline-secondary">$99.99</a>
+            <button class="btn btn-warning" onclick="addToCart( 4, 'Rainbow Shoe', 99.99)">
               Add to Cart
             </button>
           </div>
@@ -212,8 +213,8 @@
                     walking on clouds.
   
                   </p>
-                  <a href="#" class="btn btn-primary">$999.99</a>
-                  <button class="btn btn-secondary" onclick="addToCart( 5, 'White Shoe', 999.99)">
+                  <a href="#" class="btn btn-outline-secondary">$999.99</a>
+                  <button class="btn btn-warning" onclick="addToCart( 5, 'White Shoe', 999.99)">
                     Add to Cart
                   </button>
                 </div>
@@ -230,8 +231,8 @@
               Meticulously crafted using premium materials to guarantee durability and longevity.
 
             </p>
-            <a href="#" class="btn btn-primary">$69.99</a>
-            <button class="btn btn-secondary" onclick="addToCart(6, 'Orange Shoe', 69.99)">
+            <a href="#" class="btn btn-outline-secondary">$69.99</a>
+            <button class="btn btn-warning" onclick="addToCart(6, 'Orange Shoe', 69.99)">
               Add to Cart
             </button>
           </div>
@@ -248,8 +249,8 @@
               Engineered with advanced cushioning technology to provide comfort, making every step feel like you're
               walking on clouds.
             </p>
-            <a href="#" class="btn btn-primary">$99.99</a>
-            <button class="btn btn-secondary" onclick="addToCart( 1, 'Blue Shoe', 99.99)">
+            <a href="#" class="btn btn-outline-secondary">$99.99</a>
+            <button class="btn btn-warning" onclick="addToCart( 1, 'Blue Shoe', 99.99)">
               Add to Cart
             </button>
           </div>
@@ -268,8 +269,8 @@
               Comfort Beyond Compare.
 
             </p>
-            <a href="#" class="btn btn-primary">$499.99</a>
-            <button class="btn btn-secondary" onclick="addToCart( 2, 'Red Shoe', 499.99)">
+            <a href="#" class="btn btn-outline-secondary">$499.99</a>
+            <button class="btn btn-warning" onclick="addToCart( 2, 'Red Shoe', 499.99)">
               Add to Cart
             </button>
           </div>
@@ -286,8 +287,8 @@
                     Meticulously crafted using premium materials to guarantee durability and longevity.
   
                   </p>
-                  <a href="#" class="btn btn-primary">$99.99</a>
-                  <button class="btn btn-secondary" onclick="addToCart(3, 'Yellow Shoe', 99.99)">
+                  <a href="#" class="btn btn-outline-secondary">$99.99</a>
+                  <button class="btn btn-warning" onclick="addToCart(3, 'Yellow Shoe', 99.99)">
                     Add to Cart
                   </button>
                 </div>
@@ -305,8 +306,8 @@
               is committed to sustainibility.
 
             </p>
-            <a href="#" class="btn btn-primary">$99.99</a>
-            <button class="btn btn-secondary" onclick="addToCart( 4, 'Rainbow Shoe', 99.99)">
+            <a href="#" class="btn btn-outline-secondary">$99.99</a>
+            <button class="btn btn-warning" onclick="addToCart( 4, 'Rainbow Shoe', 99.99)">
               Add to Cart
             </button>
           </div>
@@ -323,8 +324,8 @@
                     Engineered with advanced cushioning technology 
   
                   </p>
-                  <a href="#" class="btn btn-primary">$999.99</a>
-                  <button class="btn btn-secondary" onclick="addToCart( 5, 'White Shoe', 999.99)">
+                  <a href="#" class="btn btn-outline-secondary">$999.99</a>
+                  <button class="btn btn-warning" onclick="addToCart( 5, 'White Shoe', 999.99)">
                     Add to Cart
                   </button>
                 </div>
@@ -341,8 +342,8 @@
               Meticulously crafted using premium materials to guarantee durability and longevity.
 
             </p>
-            <a href="#" class="btn btn-primary">$69.99</a>
-            <button class="btn btn-secondary" onclick="addToCart(6, 'Orange Shoe', 69.99)">
+            <a href="#" class="btn btn-outline-secondary">$69.99</a>
+            <button class="btn btn-warning" onclick="addToCart(6, 'Orange Shoe', 69.99)">
               Add to Cart
             </button>
           </div>
@@ -356,8 +357,8 @@
                 <div class="card-body">
                   <h5 class="card-title">Red Shoe</h5>
       
-                  <a href="#" class="btn btn-primary">$499.99</a>
-                  <button class="btn btn-secondary" onclick="addToCart( 2, 'Red Shoe', 499.99)">
+                  <a href="#" class="btn btn-outline-secondary">$499.99</a>
+                  <button class="btn btn-warning" onclick="addToCart( 2, 'Red Shoe', 499.99)">
                     Add to Cart
                   </button>
                 </div>
@@ -374,8 +375,8 @@
                           Meticulously crafted using premium materials to guarantee durability and longevity.
         
                         </p>
-                        <a href="#" class="btn btn-primary">$99.99</a>
-                        <button class="btn btn-secondary" onclick="addToCart(3, 'Yellow Shoe', 99.99)">
+                        <a href="#" class="btn btn-outline-secondary">$99.99</a>
+                        <button class="btn btn-warning" onclick="addToCart(3, 'Yellow Shoe', 99.99)">
                           Add to Cart
                         </button>
                       </div>
@@ -389,8 +390,8 @@
                 <div class="card-body">
                   <h5 class="card-title">Rainbow Shoe</h5>
       
-                  <a href="#" class="btn btn-primary">$99.99</a>
-                  <button class="btn btn-secondary" onclick="addToCart( 4, 'Rainbow Shoe', 99.99)">
+                  <a href="#" class="btn btn-outline-secondary">$99.99</a>
+                  <button class="btn btn-warning" onclick="addToCart( 4, 'Rainbow Shoe', 99.99)">
                     Add to Cart
                   </button>
                 </div>
@@ -408,8 +409,8 @@
                           walking on clouds.
         
                         </p>
-                        <a href="#" class="btn btn-primary">$999.99</a>
-                        <button class="btn btn-secondary" onclick="addToCart( 5, 'White Shoe', 999.99)">
+                        <a href="#" class="btn btn-outline-secondary">$999.99</a>
+                        <button class="btn btn-warning" onclick="addToCart( 5, 'White Shoe', 999.99)">
                           Add to Cart
                         </button>
                       </div>
@@ -426,8 +427,8 @@
                     Meticulously crafted using premium materials to guarantee durability and longevity.
       
                   </p>
-                  <a href="#" class="btn btn-primary">$69.99</a>
-                  <button class="btn btn-secondary" onclick="addToCart(6, 'Orange Shoe', 69.99)">
+                  <a href="#" class="btn btn-outline-secondary">$69.99</a>
+                  <button class="btn btn-warning" onclick="addToCart(6, 'Orange Shoe', 69.99)">
                     Add to Cart
                   </button>
                 </div>
@@ -444,8 +445,8 @@
                     Engineered with advanced cushioning technology to provide comfort, making every step feel like you're
                     walking on clouds.
                   </p>
-                  <a href="#" class="btn btn-primary">$99.99</a>
-                  <button class="btn btn-secondary" onclick="addToCart( 1, 'Blue Shoe', 99.99)">
+                  <a href="#" class="btn btn-outline-secondary">$99.99</a>
+                  <button class="btn btn-warning" onclick="addToCart( 1, 'Blue Shoe', 99.99)">
                     Add to Cart
                   </button>
                 </div>
@@ -463,38 +464,20 @@
                     Comfort Beyond Compare.
       
                   </p>
-                  <a href="#" class="btn btn-primary">$499.99</a>
-                  <button class="btn btn-secondary" onclick="addToCart( 2, 'Red Shoe', 499.99)">
+                  <a href="#" class="btn btn-outline-secondary">$499.99</a>
+                  <button class="btn btn-warning" onclick="addToCart( 2, 'Red Shoe', 499.99)">
                     Add to Cart
                   </button>
                 </div>
               </div>
             </div>
-            <!-- Item end -->
-                        
+            <!-- Item end -->                
     </div>
   </div>
     <!-- Cards (masonry) end -->
-
-    <!-- Cards -->
     <center>
-      <div class="container-sm">
-        <div class="row">
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
-        </div>
-        <div class="row">
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
-        </div>
-      </div>
-    </center>
-    <br />
-    <!-- about & feedback -->
-    <center>
-      <div class="container">
+      <div class="container my-5">
+        <h2 class="display-2">Contact US</h2>
         <div class="final-container">
           <div class="row">
             <div class="col-sm-6">
