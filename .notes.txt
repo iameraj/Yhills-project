@@ -1,0 +1,53 @@
+**Brand Name: StrideSphere**
+
+**Catchy Tagline: "Step into Tomorrow's Style, Today!"**
+
+**Description:**
+Welcome to StrideSphere, where fashion meets comfort in every step! We're not just a shoe brand; we're a lifestyle revolution. At StrideSphere, we believe that your footwear should not only look good but also feel incredible. Our shoes are designed for individuals who appreciate the perfect blend of style, innovation, and comfort.
+
+**Key Features:**
+
+1. **Comfort Beyond Compare:**
+   - Engineered with advanced cushioning technology to provide unparalleled comfort, making every step feel like you're walking on clouds.
+   - Ergonomic design ensures proper support for your feet, reducing fatigue even during long hours of wear.
+
+2. **Fashion Forward:**
+   - StrideSphere shoes are crafted with a keen eye for style, staying ahead of the latest trends in fashion. Our designs are curated to complement diverse tastes and occasions.
+
+3. **Quality Craftsmanship:**
+   - Meticulously crafted using premium materials to guarantee durability and longevity. Our shoes are built to withstand the test of time, ensuring that you stride confidently for years.
+
+4. **Innovative Materials:**
+   - Introducing revolutionary materials that are not only stylish but also environmentally conscious. StrideSphere is committed to sustainability, and our shoes reflect that commitment.
+
+5. **Versatile Collections:**
+   - Explore a diverse range of collections suitable for various occasions – from casual strolls to formal gatherings. StrideSphere has the perfect pair for every moment of your life.
+
+**Website Promo:**
+Are you ready to upgrade your shoe game? StrideSphere invites you to step into a world where comfort and style unite effortlessly. Discover the latest trends, indulge in unparalleled comfort, and redefine your fashion statement. Our diverse collections cater to your every mood, ensuring that you not only look good but also feel fantastic.
+
+Join the StrideSphere community and become a trendsetter. Experience the joy of walking with confidence, knowing that your shoes are a reflection of your unique style. Shop now and elevate your footwear game to new heights!
+
+Remember, at StrideSphere, it's not just about shoes; it's about making a statement with every step you take. Stride into tomorrow's style today!
+
+@keyframes wobble-rotate {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    45%,
+    55%,
+    65% {
+        transform: rotate(4deg);
+    }
+
+    40%,
+    50%,
+    60% {
+        transform: rotate(-2deg);
+    }
+}
+button:hover {
+    animation: wobble-rotate 0.5s ease;
+}
